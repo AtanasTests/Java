@@ -1,0 +1,41 @@
+Create a class StudentGroup representing
+a group of students from same major.
+
+Class Fields:
+groupSubject – major of the students in the group
+Student[] students – Students in the group (array of objects of class Student)
+freePlaces – free places in the group
+
+The class should define the following constructors:
+
+- a default constructor that creates places for 5 students in the group
+(initializes the students field with a new array of 5 elements)
+ and sets a value 5 on the freePlaces field
+
+- constructor StudentGroup(String subject) which first calls the constructor
+default and sets a value to the groupSubject field
+
+The class should define the following methods:
+
+- method void addStudent(Student s) which adds a student to the group(add
+it to the array at the next empty position) if the specialty of
+of the student matches that of the group,
+ and of course if there are free places.
+
+After adding a student to the group, reduce the available seats in
+the group.
+- method void emptyGroup() which frees all places in the group (set
+a new empty array for the students field)
+and assigns a value of 5 to the field freePlaces.
+
+- theBestStudent() method - Returns the name of the student with the highest GPA in
+the group.
+
+- printStudentsInGroup() method - Outputs information (Name, GPA, ...)for
+
+
+To write a College class (with a main method) that demonstrates the usage
+of the Student and StudentGroup classes
+(Creates several students, adds scholarship to some of them, transfers
+some of them in a higher year. It creates several groups of students, he adds
+students in them, gets the name of the best student from one of the groups....)

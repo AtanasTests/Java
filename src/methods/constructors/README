@@ -1,0 +1,65 @@
+Task 1:
+The Computer class should have the following constructors:
+
+- default constructor Computer() which initializes the field
+
+isNotebook with a value of false, and the operationSystem field with "Win XP".
+
+- constructor with parameters Computer(int year, double price, double
+hardDiskMemory, double freeMemory) which first calls the constructor by
+default and then initialize the rest of the fields with the values
+submitted as arguments.
+
+- constructor with parameters Computer(int year, double price, boolean
+isNotebook, double hardDiskMemory, double freeMemory, String operationSystem) which
+initializes all fields with the values passed as arguments to
+the constructor.
+
+- int comparePrice(Computer otherComp) method that compares the prices of 2
+the computer.
+
+If the price of the first computer (the one for which the method is called) is more
+higher than that of the computer passed as an argument, the method returns -1. If
+the price of the computer passed as an argument is higher, 1 is returned, and if
+are equal, the method returns a value of 0.
+
+Within the main method, create several objects of type Computer
+(via one of the available constructors).
+To compare the prices of some of the computers (using the method
+comparePrice) and display an appropriate message.
+
+Task 2: Create a Student class describing a student
+The class should have the following fields:
+
+name – name of the student
+subject - specialty
+grade - success
+yearInCollege - course
+age – years of the student
+isDegree - whether graduated or not
+money - money from scholarships
+
+The class should define the following constructors:
+-default constructor that sets the following values to
+fields: grade = 4.0, yearInCollege = 1, isDegree = false, money = 0
+
+-constructor with parameters that calls the default constructor and
+initializes (sets initial values) the remaining fields of
+the class
+
+The class should define the following methods:
+
+- void upYear() method that increments the college year by one if
+the student has not graduated, otherwise it brings out the appropriate
+message. If after incrementing the year becomes 4, sets true to
+the isDegree field
+
+-method double receiveScholarship(double min, double amount) – adds the amount
+amount the money of the student only if his success rate is higher or equal
+of the minimum success passed as a parameter (min) and if its age is
+under 30 years old.
+
+The method returns the current money to the student (after their eventual
+raise)
+To write a Demo class (with main method) that demonstrates the use of
+the Student class.
