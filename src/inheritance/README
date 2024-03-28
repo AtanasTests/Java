@@ -1,0 +1,55 @@
+To make a hierarchy of Person, Student and Employee classes
+The Person class representing a person should have the following Fields:
+ – name
+ – age
+  – years
+  – isMan – field showing gender
+
+Constructors:
+ – A single constructor, with parameters for all the fields of the class
+
+Method:
+– showPersonInfo method which displays information about the person
+(prints to the console the value of all its fields by
+appropriate way)
+
+The class Student inherits Person representing a student to have Fields:
+ – score
+ - shows the student's grade (number between 2 and 6, not
+must be whole)
+
+Single constructor:
+– Student(String name, int age, boolean isMan, double score)
+setting values to the inherited fields as well
+
+showStudentInfo() method which displays information about the person and
+information about its rating (via captions on the screen)
+
+The class Employee should inherit Person and define:
+Fields:
+– daySalary shows the worker's daily salary
+
+A constructor that initializes all its fields (own and
+inherited)
+Methods:
+In case an employee has to work outside working hours,
+he is owed an additional amount of money (overtime) for the hours who has worked.
+ The amount is calculated as follows:
+ if the worker, no 18 years of age, the amount payable is 0. Otherwise, for each hour worked,
+  the worker is paid the amount he receives per hour
+(depends on the daily wage) multiplied by 1.5.
+– method calculateOvertime(double hours) which calculates and returns
+the value of the amount owed to him for working outside of working hours time
+- showEmployeeInfo() method that displays information about the person,
+as well as information about his daily wage
+
+Also write a demonstration class with a main method in which:
+1. To compose an array of 10 elements of type Person.
+2. To create two objects of type Person, Student and Employee
+and get into the mass of people.
+3. To traverse the array and depending on whether the object is from
+type Person, Student or Employee to call the method accordingly
+showPersonInfo, showStudentInfo, or showEmployeeInfo.
+4. To go through the array of people once more and for every person that is
+worker, to display the amount owed to him under 2
+hours of out-of-hours work.
